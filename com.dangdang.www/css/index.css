@@ -1,0 +1,104 @@
+.toubu a{
+    float: left;
+    height: 200px;
+    width: 100%;
+    background-image: url(../upload/toubu01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.dingbu{
+    height: 40px;
+    width: 100%;
+    background-color: #f9f9f9;
+    line-height: 40px;
+    margin: 0 8px;
+}
+
+.dingbu-left{
+    float: left;
+}
+
+.dingbu-right{
+    float: right;
+}
+
+.dingbu-right p,
+.dingbu-right a,
+.dingbu-right i,
+.dingbu-right span{
+    float: left;
+    color: #646464;
+ 
+}
+
+.dingbu-right i{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.dingbu-right span a {
+    float: right;
+    color: #ff2832;
+}
+
+.dingbu-right .car span{
+    float: right;
+    color:#ff2832;
+}
+
+.dingbu-right .car{
+    position: relative;
+    margin-left: 42px;
+}
+
+.dingbu-right .car img{
+position: absolute;
+top :0;
+left:-27px;
+width: 17px;
+height: 17px;
+}
+
+.sousuo{
+    height: 112px;
+    
+}
+
+.sousuo-logo{
+    float: left;
+    margin-top: calc((112px - 77px) / 2);
+}
+
+.sousuo-sousuok{
+    margin-top: calc((112px - 45px) / 2);
+    /* border: 1px solid ;/ */
+    position: relative;
+    top: 0;
+    right: 0;
+}
+
+.sousuo-sousuok input{
+    float: left;
+    height: 45px;
+    width: 460px;
+    border: 3px solid #ff2832;
+    box-sizing: border-box;
+}
+
+.sousuo-sousuok .gjz{
+    float: left;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 730px;
+    background-color: #f6f6f6;
+}
+
+.sousuo-sousuok button{
+    float: left;
+    height: 45px;
+    width: 56px;
+    background-color: #ff2832;
+    border: 3px solid #ff2832;
+    margin-top: 0px;
+}
