@@ -76,6 +76,7 @@ height: 17px;
     position: relative;
     top: 0;
     right: 0;
+    
 }
 
 .sousuo-sousuok input{
@@ -102,3 +103,60 @@ height: 17px;
     border: 3px solid #ff2832;
     margin-top: 0px;
 }
+
+.sousuo-rs-left p{
+    display: inline;
+}
+
+.sousuo-rs-left,
+.sousuo-rs-right {
+    float: left;
+}
+
+.sousuo-rs-right{
+    margin-left: 80px;
+}
+
+.sousuo-gwc{
+    float: left;
+    width: 125px;
+    height: 45px;
+    margin-left: 140px;
+    background-color: #ff2832;
+}
+
+.sousuo-gwc a {
+    color: #fff;
+}
+
+.sousuo-gwc-dd{
+    float: left;
+    width: 75px;
+    height: 43px;
+    border: 1px solid #dfdfdf;
+    line-height: 43px;
+    color: #646464;
+}
+
+.sousuo-gwc-dd a{
+    padding-left: 15px;
+}
+
+.toubiao{
+    height: 48px;
+    border-bottom: 3px solid red;
+}
+
+.toubiao-dage {
+    float: left;
+    width: 170px;
+    height: 48px;
+    background-color: red;
+    line-height: 48px;
+    padding-left: 25px;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+
+
