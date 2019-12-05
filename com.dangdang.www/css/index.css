@@ -127,6 +127,7 @@ height: 17px;
 
 .sousuo-gwc a {
     color: #fff;
+   
 }
 
 .sousuo-gwc-dd{
@@ -139,13 +140,20 @@ height: 17px;
 }
 
 .sousuo-gwc-dd a{
-    padding-left: 15px;
+    padding-left: 20px;
 }
 
 .toubiao{
     height: 48px;
     border-bottom: 3px solid red;
 }
+
+.toubiao a{
+    line-height: 48px;
+    padding-left: 36px;
+    
+}
+
 
 .toubiao-dage {
     float: left;
@@ -157,6 +165,83 @@ height: 17px;
     color: #fff;
     box-sizing: border-box;
 }
+
+.lzy{
+    height: 528px;
+
+}
+
+.lzy-wenzi {
+    float: left;
+}
+
+.lzy-wenzi a {
+    display: block;
+}
+
+
+.lzy-wenzi li {
+    width: 200px;
+    height: 30px;
+
+}
+
+.lzy-wenzi li a {
+   
+    color: #323232;
+    font-size: 16px;
+    line-height: 30px;
+    padding-left: 18px;
+
+}
+
+.lzy-tupian1 {
+    float: left;
+}
+
+.lzy-tupian {
+  float: right;
+
+}
+
+.lzy-tupian img {
+    border-right: 2px solid #f7f7f7;
+}
+
+.lzy-right-wenzi {
+    float: left;
+    width: 103px;
+    height: 29px;
+    padding-left:26px;
+    line-height: 29px;
+   
+    background-color:#f0f0f0;
+    box-sizing: border-box;
+    border-right: 2px solid #f7f7f7;
+}
+
+.lzy-right-wenzi span {
+    color: #646464;
+}
+
+.lzy-right-wenz-right{
+    float: left;
+    width: 101px;
+    height: 28.8px;
+    padding-left:26px;
+    color: #646464;
+    line-height: 28.8px;
+    box-sizing: border-box;
+    border-right: 2px solid #f7f7f7;
+}
+
+.lzy-right-wenz-right span {
+    color: #646464;
+}
+
+/* .lzy-right-wenzi1 li{
+    height: 24.8px;
+} */
 
 
 
