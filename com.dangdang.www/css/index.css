@@ -7,6 +7,23 @@
     background-size: cover;
 }
 
+.clearfix:before,
+.clearfix:after {
+
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+
+    clear: both;
+}
+
+.clearfix {
+
+    *zoom: 1;
+}
+
 .dingbu{
     height: 40px;
     width: 100%;
@@ -168,7 +185,7 @@ height: 17px;
 
 .lzy{
     height: 528px;
-
+    box-sizing: border-box;
 }
 
 .lzy-wenzi {
@@ -239,9 +256,36 @@ height: 17px;
     color: #646464;
 }
 
-/* .lzy-right-wenzi1 li{
-    height: 24.8px;
-} */
+.lzy-right-wenzi1   {
+    float: left;
+  width: 200px;
+  height: 143px;
+
+  box-sizing: border-box;
+}
+
+.lzy-right-wenzi1 a {
+    display: block;
+}
+
+
+.lzy-right-wenzi1 a{
+    width: 157px;
+    height: 26.8px;
+    padding-left: 24px;
+    line-height: 30.8px;
+    border-right: 2px solid #f7f7f7;
+}
+
+.lzy-right-wenzi1 a img {
+
+    float: left;
+}
+
+.lzy-xiaotupian  a {
+    width: 197px;
+
+}   
 
 
 
