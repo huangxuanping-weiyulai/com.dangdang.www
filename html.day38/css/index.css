@@ -1,0 +1,681 @@
+body {
+  background-color: #f5f5f5;
+}
+
+header {
+  /*fixed：与absolute一致，但偏移定位是以窗口为参考。
+当出现滚动条时，对象不会随着滚动。*/ 
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 40px;
+  background-color: #c91523;
+  /*光标指针*/
+  cursor: pointer;
+}
+
+.header-logo {
+  /*absolute：对象脱离常规流，
+  此时偏移属性参照的是离自身最近的定位祖先元素，
+  如果没有定位的祖先元素，则一直回溯到body元素。
+  盒子的偏移位置不影响常规流中的任何元素，
+  其margin不与其他任何margin折叠。*/
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 58px;
+  height: 20px;
+  background-position: 0px -109px;
+}
+
+.header-sousuo {
+  /*relative：对象遵循常规流，
+  并且参照自身在常规流中的位置通过
+  top，right，bottom，left
+  这4个定位偏移属性进行偏移时不会影响常规流中的任何元素。*/
+  position: relative;
+  width: 100%;
+  height: 40px;
+  padding-left: 78px;
+  padding-right: 55px;
+}
+
+.header-sousuo i {
+  position: absolute;
+  top: 10px;
+  left: 84px;
+  width: 20px;
+  height: 20px;
+  background-position: -59px -109px;
+
+}
+
+.header-sousuo input {
+  /*border:none表示边框样式无*/
+  border: none;
+  width: 100%;
+  height: 30px;
+  margin-top: 5px;
+  background-color: #fff;
+  /*定义元素的圆角*/
+  border-radius: 15px;
+  padding-left: 30px;
+}
+
+.header-login {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 40px;
+  width: 54px;
+  /*居中*/
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  /*字体大小*/
+  font-size: 14px;
+}
+
+/* 轮播图 */
+main {
+  padding-top: 40px;
+  padding-bottom: 44px;
+}
+
+
+.lunbotu {
+  width: 100%;
+  
+/*当内容没有溢出容器时不出现滚动条，
+当内容溢出容器时出现滚动条，按需出现滚动条。*/
+  overflow-x: auto;
+}
+
+.lunbotu ul {
+  width: 1000%;
+  /*超出隐藏*/
+  overflow: hidden;
+}
+
+.lunbotu li {
+  float: left;
+  width: 10%;
+}
+
+.lunbotu a {
+  width: 100%;
+  /*指定对象为块元素*/
+  display: block;
+}
+
+.lunbotu img {
+  width: 100%;
+}
+
+/* 更多操作 */
+
+.gengduocaozuo {
+  width: 100%;
+  background-color: #fff;
+  padding-top: 10px;
+}
+
+.gengduocaozuo ul {
+  width: 100%;
+  overflow: hidden;
+}
+
+.gengduocaozuo li {
+  float: left;
+  width: 25%;
+  margin-bottom: 10px;
+}
+
+.gengduocaozuo  a {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.gengduocaozuo img {
+  width: 40px;
+  height: 40px;
+}
+
+.gengduocaozuo span {
+  display: block;
+  margin-top: 5px;
+}
+
+/* 秒杀 */
+.miaosa {
+  width: 100%;
+  margin-top: 5px;
+  background-color: #fff;
+}
+
+.miaosa-title {
+  padding: 0 10px;
+  width: 100%;
+  height: 30px;
+}
+
+.miaosa-title h3 {
+  position: relative;
+  float: left;
+  line-height: 32px;
+  font-weight: normal;
+  padding-left: 24px;
+  font-size: 16px;
+  color: #c91523;
+}
+
+.miaosa-title h3:before {
+  /*用来和:after及:before伪元素一起使用，
+  在对象前或后显示内容。*/
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 18px;
+  height: 24px;
+
+  background-image: url(../image/jd-sprites.png);
+  background-size: 200px 200px;
+  background-position: -84px -109px;
+}
+
+.miaosa-title .time {
+  float: left;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+/* odd(奇数) even(偶数) */
+/*伪类选择器*/
+.miaosa-title .time span:nth-child(odd) {
+  background-color: black;
+  color: #fff;
+  padding: 0 2px;
+  padding-top: 1px;
+  border-radius: 3px;
+ 
+}
+
+.miaosa-title .more {
+  float: right;
+  color: #666;
+  line-height: 30px;
+}
+
+.miaosa-list {
+  width: 100%;
+  padding: 0 10px;
+  padding-bottom: 15px;
+}
+
+.miaosa-list ul {
+  width: 100%;
+  overflow: hidden;
+}
+
+.miaosa-list li {
+  float: left;
+  width: 33.333333%;
+ 
+}
+
+.miaosa-list a {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+
+.miaosa-list span {
+  position: absolute;
+  right: 5px;
+  bottom: 0;
+  height: 20px;
+  padding: 0 5px;
+  background-color: #fdb60a;
+  color: #fff;
+  border-radius: 50%;
+  /* text-align: center; */
+  line-height: 20px;
+  font-size: 12px;
+}
+
+.miaosa-list img {
+  width: 100%;
+}
+
+.miaosa-list b,
+.miaosa-list s {
+  display: block;
+  text-align: center;
+}
+
+.miaosa-list b {
+  /*字体粗细（normal为正常）*/
+  font-weight: normal;
+  font-size: 16px;
+  color: #c91523;
+  margin-bottom: 5px;
+}
+
+.miaosa-list s {
+  font-weight: normal;
+  font-size: 12px;
+  color: #666;
+  /*删除线*/
+  text-decoration: line-through;
+}
+
+/* 活动 */
+.huodong {
+  position: relative;
+  width: 100%;
+}
+/*在嵌套标签中，>将样式只作用于儿子辈的标签，
+而不作用于孙子辈的标签。*/
+.huodong > img {
+  width: 100%;
+}
+
+.huodong ul {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.huodong li {
+  float: left;
+  width: 50%;
+}
+
+.huodong a {
+  display: block;
+  width: 100%;
+}
+
+.huodong img {
+  width: 100%;
+}
+
+/* 产品 */
+.chanpin {
+  width: 100%;
+}
+
+.chanpin ul {
+  width: 100%;
+}
+
+.chanpin li {
+  width: 100%;
+  overflow: hidden;
+}
+
+.chanpin a {
+  float: left;
+}
+
+.chanpin img {
+  width: 100%;
+}
+
+.chanpin li:first-child a{
+  width: 33.3333333%;
+}
+
+.chanpin li:last-child a{
+  width: 50%;
+}
+
+/* 广告 */
+.guanggao {
+  width: 100%;
+  padding: 10px;
+}
+
+.guanggao a {
+  display: block;
+  width: 100%;
+}
+
+.guanggao img {
+  width: 100%;
+}
+
+/* 超市 */
+.chaoshi {
+  width: 100%;
+  margin-top: 5px;
+  padding: 0 10px;
+  background-color: #fff;
+}
+
+.chaoshi-title,.pinpai-title  {
+  height: 30px;
+  font-size: 16px;
+  color: #f25353;
+  line-height: 30px;
+  font-weight: normal;
+}
+
+.chaoshi ul {
+  width: 100%;
+}
+
+.chaoshi li {
+  width: 100%;
+  overflow: hidden;
+}
+
+.chaoshi a {
+  float: left;
+  width: 50%;
+}
+
+.chaoshi img {
+  width: 100%;
+}
+
+/* 主题 */
+.zhuti {
+  width: 100%;
+}
+.zhuti ul {
+  width: 100%;
+}
+
+.zhuti li {
+  width: 100%;
+  overflow: hidden;
+}
+
+.zhuti a {
+  float: left;
+}
+
+.zhuti img {
+  width: 100%;
+}
+
+.zhuti li:first-child a {
+  width: 50%;
+}
+
+.zhuti li:last-child a {
+  width: 25%;
+}
+
+.zhuti li:first-child a:nth-last-child(-n+2) {
+  width: 25%;
+}
+
+
+
+/* 3.9 主体-品牌推荐 */
+.pinpai {
+  width: 100%;
+  background-color: #fff;
+}
+
+.pinpai-toubu {
+ padding-left: 10px;
+}
+
+.pinpai ul {
+  width: 100%;
+ 
+  overflow: hidden;
+}
+
+.pinpai li {
+  float: left;
+  width: 30%;
+}
+
+.pinpai a {
+  display: block;
+  width: 100%;
+
+}
+
+.pinpai img {
+  width: 100%;
+}
+
+.pinpai li:nth-child(1) {
+  width: 40%;
+}
+
+
+/*  爱好 */
+.caixihuan {
+  width: 100%;
+  background-color: #fff;
+}
+
+.caixihuan-toubu {
+  width: 100%;
+  height: 30px;
+  padding: 0 10px;
+  line-height: 30px;
+}
+
+.caixihuan-toubu h3 {
+  float: left;
+  font-weight: lighter;
+  font-size: 16px;
+  color: #666;
+}
+
+
+.caixihuan-toubu a {
+  position: relative;
+  float: right;
+  color: #f25353;
+  
+}
+
+.caixihuan-toubu a:before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: -22px;
+  width: 18px;
+  height: 18px;
+  background-image: url(../image/icon-login.png);
+  background-size: 18px 18px;
+}
+
+.caixihuan-biao {
+  width: 100%;
+}
+
+.caixihuan-biao ul {
+  width: 100%;
+  overflow: hidden;
+}
+
+.caixihuan-biao li {
+  float: left;
+  width: 50%;
+  padding: 0 10px;
+  padding-bottom: 10px;
+}
+
+.caixihuan-biao li > a {
+  display: block;
+  width: 100%;
+} 
+
+
+.caixihuan-biao li img {
+  width: 100%;
+  padding: 15px 0;
+} 
+
+.caixihuan-biao li p {
+  width: 100%;
+  /*省略号*/
+  text-overflow: ellipsis;
+  /* p标签格式 */
+  display: -webkit-box;
+  /* 规定行数 */
+  -webkit-line-clamp: 2;
+  /* 排列方式  */
+  -webkit-box-orient: vertical;
+  /* 换行 */
+  word-break: break-all;
+  /* 隐藏文字 */
+  overflow: hidden;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.caixihuan-biao-price {
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  overflow: hidden;
+
+}
+
+.caixihuan-biao-price b {
+  line-height: 20px;
+  color: #f25353;
+  font-weight: normal;
+}
+
+.caixihuan-biao-price a {
+  float: right;
+  color: #999;
+  border:1px solid #999;
+  border-radius: 2px;
+  padding: 0 2px;
+  padding-top: 2px;
+}
+
+
+/* 底部 */
+footer {
+  width: 100%;
+
+}
+
+/* 加载更多 */
+.jiazaigengduo {
+  display: block;
+  width: 100%;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  border-top: 1px solid #ccc;
+  color: #666;
+  font-size: 14px;
+}
+
+/* 反馈 */
+
+.fankui {
+  width: 100%;
+  overflow: hidden;
+  border-top: 1px solid #ccc;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.fankui a {
+  color: #999;
+  font-size: 12px;
+  padding: 0 24px;
+  border-right: 1px solid #ccc;
+}
+
+.fankui a:last-child {
+  border-right: none;
+}
+
+/* 版本 */
+
+.banben {
+  border-top: 1px solid #ccc;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.banben a {
+  position: relative;
+  font-size: 12px;
+  padding: 0 24px;
+  color: #999;
+}
+
+
+.banben a:before {
+  content: '';
+  position: absolute;
+ 
+  width: 33px;
+  height: 33px;
+  background-image: url("../image/jd-sprites.png");
+  background-size: 200px 200px;
+}
+
+.banben a:first-child::before {
+  top: -42px;
+  left: 25px;
+  background-position: -120px -70px;
+}
+
+.banben a:nth-child(2)::before {
+  top: -42px;
+  left: 25px;
+  background-position: -40px -70px;
+}
+
+.banben a:last-child::before {
+  top: -42px;
+  left: 25px;
+  background-position: -80px -70px;
+}
+
+footer p {
+  border-top: 1px solid #ccc;
+  padding: 15px 0;
+  text-align: center;
+}
+
+
+
+/* 底部导航  */ 
+
+nav {
+  display: flex;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 44px;
+  background-color: #fff;
+}
+
+nav a {
+  flex: 1;
+  height: 100%;
+  text-align: center;
+}
+
+nav img {
+  width: auto;
+  height: 100%;
+}
+
