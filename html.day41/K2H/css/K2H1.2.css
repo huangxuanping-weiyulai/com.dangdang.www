@@ -1,0 +1,105 @@
+@media screen and (width: 320px) {
+    html {
+      font-size: calc(320px / 20);
+    }
+  }
+
+  @media screen and (width: 360px) {
+    html {
+      font-size: calc(360px / 20);
+    }
+  }
+
+
+  @media screen and (width: 375px) {
+    html {
+      font-size: calc(375px / 20);
+    }
+  }
+
+html,body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    height: calc( 88rem / 32);
+    width: 100%;
+    background-color: #ff9b25;
+}
+
+.jiaobiao img {
+
+}
+
+.jiaobiao span {
+}
+
+
+
+.youhui-zuo {
+    float: left;
+    font-size: calc( 27rem / 32);
+    
+} 
+
+.youhui span {
+    color: #000;
+    margin-left: calc( 25rem / 32);
+    margin-top: calc( 30rem / 32);
+}
+
+.youhui-you {
+    float: right;
+    margin-right: calc( 25rem / 32);
+    margin-top: calc( 30rem / 32);
+    width: calc( 36rem / 32);
+    height: calc( 24rem / 32);
+}
+
+.hezi {
+    border: calc(3rem / 32) dashed #dedede;
+    margin-top: calc( 95rem / 32);
+    margin-left: calc( 20rem / 32);
+    width: calc( 592rem / 32);
+    height: calc( 224rem / 32);
+    position: relative;
+}
+
+
+.yuan-yuan {
+    position: absolute;
+    margin-top: calc(35rem / 32);
+    margin-left: calc(250rem / 32);
+    height: calc(98rem /32);
+    width: calc(98rem /32);
+}
+
+.yuan-shi {
+  position: absolute;
+  margin-top: calc(45rem / 32);
+  margin-left: calc(260rem / 32);
+  height: calc(80rem /32);
+  width: calc(80rem /32);
+}
+
+.hezi span {
+  position: absolute;
+  color: #aeaeae;
+  margin-top: calc(156rem / 32);
+  margin-left: calc(240rem / 32);
+}
+
+.wenben span{
+  float: left;
+  color: #999999;
+  margin-left: calc( 25rem / 32);
+  margin-top: calc( 30rem / 32);
+}
+
+.wenben ol {
+  padding-top: calc( 85rem / 32);
+  color: #999999;
+  font-size: calc(23rem / 32);
+}
