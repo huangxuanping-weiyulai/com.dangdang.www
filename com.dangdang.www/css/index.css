@@ -1,4 +1,4 @@
-.toubu a{
+.toubu a {
     float: left;
     height: 200px;
     width: 100%;
@@ -25,7 +25,7 @@
     *zoom: 1;
 }
 
-.dingbu{
+.dingbu {
     height: 40px;
     width: 100%;
     background-color: #f9f9f9;
@@ -33,24 +33,24 @@
     margin: 0 8px;
 }
 
-.dingbu-left{
+.dingbu-left {
     float: left;
 }
 
-.dingbu-right{
+.dingbu-right {
     float: right;
 }
 
 .dingbu-right p,
 .dingbu-right a,
 .dingbu-right i,
-.dingbu-right span{
+.dingbu-right span {
     float: left;
     color: #646464;
  
 }
 
-.dingbu-right i{
+.dingbu-right i {
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -60,17 +60,17 @@
     color: #ff2832;
 }
 
-.dingbu-right .car span{
+.dingbu-right .car span {
     float: right;
     color:#ff2832;
 }
 
-.dingbu-right .car{
+.dingbu-right .car {
     position: relative;
     margin-left: 42px;
 }
 
-.dingbu-right .car img{
+.dingbu-right .car img {
 position: absolute;
 top :0;
 left:-27px;
@@ -78,17 +78,17 @@ width: 17px;
 height: 17px;
 }
 
-.sousuo{
+.sousuo {
     height: 112px;
     
 }
 
-.sousuo-logo{
+.sousuo-logo {
     float: left;
     margin-top: calc((112px - 77px) / 2);
 }
 
-.sousuo-sousuok{
+.sousuo-sousuok {
     margin-top: calc((112px - 45px) / 2);
     /* border: 1px solid ;/ */
     position: relative;
@@ -97,7 +97,7 @@ height: 17px;
     
 }
 
-.sousuo-sousuok input{
+.sousuo-sousuok input {
     float: left;
     height: 45px;
     width: 460px;
@@ -105,7 +105,7 @@ height: 17px;
     box-sizing: border-box;
 }
 
-.sousuo-sousuok .gjz{
+.sousuo-sousuok .gjz {
     float: left;
     position: absolute;
     margin-top: 15px;
@@ -113,7 +113,7 @@ height: 17px;
     background-color: #f6f6f6;
 }
 
-.sousuo-sousuok button{
+.sousuo-sousuok button {
     float: left;
     height: 45px;
     width: 56px;
@@ -122,7 +122,7 @@ height: 17px;
     margin-top: 0px;
 }
 
-.sousuo-rs-left p{
+.sousuo-rs-left p {
     display: inline;
 }
 
@@ -187,6 +187,7 @@ height: 17px;
 .lzy{
     height: 528px;
     box-sizing: border-box;
+    position: relative;
 }
 
 .lzy-wenzi {
@@ -218,18 +219,28 @@ height: 17px;
 }
 
 .lzy-tupian {
-  float: right;
-
+    float: right;
+    height: 195px;
+    width: 200px;
+    background-image: url(../img/lzy5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;  
+    margin-left: 1000px;
+    position: absolute;
+    
 }
 
 .lzy-tupian img {
+    float: right;
+    width: 200px;
     border-right: 2px solid #f7f7f7;
 }
 
 .lzy-right-wenzi {
     float: left;
-    width: 103px;
+    width: 100px;
     height: 29px;
+    padding-top: 194px;
     padding-left:26px;
     line-height: 29px;
    
@@ -243,9 +254,10 @@ height: 17px;
 }
 
 .lzy-right-wenz-right{
-    float: left;
-    width: 101px;
+    float: right;
+    width: 97px;
     height: 28.8px;
+    padding-top: 194px;
     padding-left:26px;
     color: #646464;
     line-height: 28.8px;
@@ -258,7 +270,7 @@ height: 17px;
 }
 
 .lzy-right-wenzi1   {
-    float: left;
+    float: right;
   width: 200px;
   height: 143px;
 
@@ -273,14 +285,14 @@ height: 17px;
 .lzy-right-wenzi1 a{
     width: 157px;
     height: 26.8px;
-    padding-left: 24px;
+    /* padding-left: 24px; */
     line-height: 30.8px;
     border-right: 2px solid #f7f7f7;
 }
 
 .lzy-right-wenzi1 a img {
-
-    float: left;
+    padding-top: 194px;
+    float: right;
 }
 
 .lzy-xiaotupian  a {
@@ -288,5 +300,21 @@ height: 17px;
 
 }   
 
+.jingxuan {
+    height: 62px;
+    width: 1200px;
+    border-bottom: 2px solid #3c3c3c;
+}
 
+.jingxuan img {
+    padding-top: 15px;
+}
 
+.huodong-pintuan {
+    float: left;
+}
+
+.huodong-tupian img {
+    width: 150px;
+    height: 150px;
+}
