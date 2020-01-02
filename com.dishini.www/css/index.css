@@ -1,0 +1,130 @@
+header {
+    position: fixed;
+    top: 0;left: 0;
+    height: calc(78rem / 32);
+    width: 100%;
+    padding: 22.5px 0px 11.25px;
+    text-align: center;
+    background-color: #fff;
+  
+}
+
+header a {
+    width: 100%;
+}
+
+.header-tupian1 {
+    display: block;
+    float: left;
+    width: calc(16rem / 32);
+    height: calc(14rem / 32);
+    margin-left: calc(17rem / 32);
+    margin-top: calc(16rem / 32);
+}
+
+.header-tupian img {
+    display: block;
+    float: left;
+    width: calc(30rem / 32);
+    height: calc(15rem / 32);
+    margin-left: calc(10rem / 32);
+    margin-top: calc(16rem / 32);
+}
+
+.header-tupian3 {
+    width: calc(110rem / 32);
+    height: calc(48rem / 32);
+    /* margin: 0 calc(104.15rem / 32); */
+    margin-left: calc(-80rem / 32);
+    /* margin: 0 auto; */
+}
+
+.lbt {
+    padding-top: calc(78rem / 32); ;
+    /* height: calc(234rem / 32); */
+    /* width: calc(234rem / 32); */
+    
+}
+
+.lbt img {
+    width: calc(320rem / 32);
+    height: calc(133rem / 32);
+}
+
+.huaqian {
+    width: 100%;
+}
+
+.huaqian-hezi {
+    width: 100%;
+    height: calc(50rem / 32);
+    list-style: none;
+    border-bottom: 1px solid #b2b2b2;
+    position: relative;
+}
+
+.huaqian-tupian1 img {
+    position: absolute;
+    margin-left: calc(10rem / 32);
+    margin-top: calc(10rem / 32);
+    width: calc(23rem / 32);
+    height: calc(23rem / 32);
+}
+
+.huaqian  p {
+    display: block;
+    width: 85%;
+    height: 100%;
+    margin-left: 15%;
+    text-align: left;
+    line-height: calc(50rem /32);
+    font-weight: bold;
+    font-size: calc(15rem / 32);
+}
+
+.huaqian-tupian2 img {
+    position: absolute;
+    margin-left: calc(10rem / 32);
+    margin-top: calc(10rem / 32);
+    width: calc(23rem / 32);
+    height: calc(23rem / 32);
+}
+
+.mingxing {
+    width: 100%;
+    margin: calc(40rem / 32) auto;
+    font-size: calc(23rem / 32);
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+    line-height: calc(28rem / 32);
+}
+
+.mingxingtupian {
+    width: 100%;
+}
+
+/* .mingxingtupian img {
+    
+} */
+
+.mingxingtupian-1 {
+    float: left;
+    margin: 0 calc(10rem / 32);
+    width: calc(70rem / 32);
+    height: calc(70rem / 32);
+}
+
+.mingxingtupian-2 {
+    margin-left: calc(30rem / 32);
+
+    width: calc(80rem / 32);
+    height: calc(80rem / 32);
+}
+
+.mingxingtupian-3 {
+    float: right;
+    margin: 0 calc(10rem / 32);
+    width: calc(70rem / 32);
+    height: calc(70rem / 32);
+}
